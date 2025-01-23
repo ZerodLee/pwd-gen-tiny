@@ -1,12 +1,29 @@
 {
   "name": "pwd-gen-pro",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "a lightweight JavaScript library for generating high-strength random passwords",
-  "main": "index.js",
+  "main": "dist/index.umd.js",
   "type": "module",
   "scripts": {
     "build": "rolldown -c rolldown.config.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "node": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "browser": "./dist/index.umd.js",
+      "default": "./dist/index.min.js",
+      "types": "./types/index.d.ts"
+    }
   },
   "keywords": [
     "pwd",
