@@ -1,6 +1,6 @@
 {
   "name": "pwd-gen-tiny",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a lightweight JavaScript library for generating high-strength random passwords",
   "main": "dist/index.umd.js",
   "type": "module",
