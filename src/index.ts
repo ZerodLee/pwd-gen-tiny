@@ -1,4 +1,4 @@
-// import { PasswordOptions } from "../types";
+import type { PasswordOptions } from "../types/index";
 import { defaultOptions } from "./default-config";
 
 // export default function pwdGen(options: PasswordOptions) {
